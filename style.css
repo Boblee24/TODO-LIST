@@ -1,0 +1,159 @@
+:root {
+    --main : #F2F2F2;
+    --primary: #007AF3;
+    --dark :  #2d3742;
+    --light :  #4c195c;
+    --shadow : 0 1px 3px rgba(0, 0, 0, 0.2);
+    --input: #1e242a;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button {
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: var(--dark);
+    min-height: 100vh;
+    color: var(--main);
+    
+
+}
+header{
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+    /* background-color: red; */
+    padding: 2rem 1rem;
+}
+nav {
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    margin: em;
+    
+}
+h1 {
+    font-size: 2.5rem;
+    margin-right: .5em;
+    font-weight: 300;
+    letter-spacing: .1em;
+}
+
+nav img {
+    aspect-ratio: 1/1;
+    width: 2.5em;
+}
+#new-todo-list {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    /* justify-content: space-between; */
+    margin-top: 1rem;
+
+    
+}
+
+#new-todo-input::placeholder {
+    color: var(--main);
+    opacity: .7;
+    letter-spacing: .05em;
+}
+
+#new-todo-input {
+    background-color:var(--input);
+    padding: 1em;
+    border-radius: .5em;
+    font-size: 1rem;
+    /* color: var(--dark); */
+    color: red;
+    margin-right: 2em;
+}
+
+#new-todo-submit {
+    background-image: linear-gradient(to right, var(--light), var(--primary) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.1em;
+
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .09rem;
+    margin-bottom: 1rem;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: var(--input);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.content .text{
+    color: var(--main);
+    opacity: .9;
+    font-size: 1.125rem;
+    width: 100%;
+    flex: 1 1 0%;
+
+}
+
+.content .text:not(:read-only){
+    color: var(--primary);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin: 0 .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: .8rem;
+    transition: .4s;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+button:active {
+    opacity: .6s;
+    transition: 0;
+}
+
+.edit {
+    background-image: linear-gradient(to right, var(--light), var(--primary) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.delete {
+    color: crimson;
+}
+
